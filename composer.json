@@ -1,11 +1,11 @@
 {
-    "name": "filisko/pdo-plus",
-    "description": "PDO plus extends PDO to allow you to see all your executed queries. It also includes a Bar Panel for Tracy",
-    "keywords": ["pdo", "logging", "queries", "tracy"],
+    "name": "dzegarra/tracy-mysqli",
+    "description": "This lib extends mysqli to allow you to see all your executed queries. It also includes a Bar Panel for Tracy",
+    "keywords": ["mysqli", "mysqli", "logging", "queries", "tracy"],
     "type": "package",
     "license": "MIT",
     "autoload": {
-        "psr-4": {"Filisko\\PDOplus\\": "src/"}
+        "psr-4": {"dzegarra\\tracy\\": "src/"}
     },
     "suggest": {
         "jdorn/sql-formatter": "Highlight the SQL logged queries",
@@ -13,8 +13,8 @@
     },
     "authors": [
         {
-            "name": "Filisko",
-            "email": "filisfutsarov@gmail.com"
+            "name": "Daniel",
+            "email": "dzegarra@gmail.com"
         }
     ]
 }
