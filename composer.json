@@ -1,5 +1,6 @@
 {
     "name": "dzegarra/tracy-mysqli",
+    "version": "1.0",
     "description": "This lib extends mysqli to allow you to see all your executed queries. It also includes a Bar Panel for Tracy",
     "keywords": ["mysqli", "mysqli", "logging", "queries", "tracy"],
     "type": "package",
