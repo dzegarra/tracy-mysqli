@@ -4,7 +4,7 @@ This lib allow you to see all your executed SQL queries when you are using the M
 It also includes a Bar Panel for Tracy, see the result below.
 
 ## Result
-![PDO logger with Tracy](https://i.snag.gy/AbESVC.jpg "PDO logger with Tracy")
+![MySQLi logger with Tracy](https://cloud.githubusercontent.com/assets/651286/23301744/b50e5f82-fa8b-11e6-8cb3-8cd249b1fe07.png "MySQLi logger with Tracy")
 
 ## Installation
 Install it via composer:
