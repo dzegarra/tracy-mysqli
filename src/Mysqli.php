@@ -1,13 +1,13 @@
 <?php
-namespace dzegarra\tracy;
+namespace Dzegarra\TracyMysqli;
 
-class mysqli extends \mysqli
+class Mysqli extends \mysqli
 {
     /**
      * Logged queries.
      * @var array
      */
-    protected $log = [];
+    protected static $log = [];
 
     /**
      * Relay all calls.
@@ -46,15 +46,15 @@ class mysqli extends \mysqli
             'statement' => $query,
             'time' => $time
         ];
-        array_push($this->log, $entry);
+        array_push(self::$log, $entry);
     }
 
     /**
      * Return logged queries.
      * @return array Logged queries
      */
-    public function getLog()
+    public static function getLog()
     {
-        return $this->log;
+        return self::$log;
     }
 }

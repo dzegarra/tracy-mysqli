@@ -1,16 +1,18 @@
 {
     "name": "dzegarra/tracy-mysqli",
-    "version": "1.0",
+    "version": "0.1",
     "description": "This lib extends mysqli to allow you to see all your executed queries. It also includes a Bar Panel for Tracy",
     "keywords": ["mysqli", "mysqli", "logging", "queries", "tracy"],
     "type": "package",
     "license": "MIT",
     "autoload": {
-        "psr-4": {"dzegarra\\tracy\\": "src/"}
+        "psr-4": {"Dzegarra\\TracyMysqli\\": "src/"}
+    },
+    "require": {
+        "tracy/tracy": "^2.4"
     },
     "suggest": {
-        "jdorn/sql-formatter": "Highlight the SQL logged queries",
-        "tracy/tracy": "Install Tracy if you want to use the provided Bar Panel to see the logged queries"
+        "jdorn/sql-formatter": "Highlight the SQL logged queries"
     },
     "authors": [
         {
