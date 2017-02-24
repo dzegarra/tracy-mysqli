@@ -107,7 +107,7 @@ class BarPanel implements \Tracy\IBarPanel
                 $html .= '<tr>';
                 $html .= '<td><span '.self::$time_attributes.'>'.round($query['time'], 4).'</span></td>';
                 if (class_exists('\SqlFormatter')) {
-                    $html .= '<td>'.\SqlFormatter::highlight($query['statement']).'</td>';
+                    $html .= '<td>'.\SqlFormatter::format($query['statement']).'</td>';
                 } else {
                     $html .= '<td '.self::$query_attributes.'>'.$query['statement'].'</td>';
                 }
