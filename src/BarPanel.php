@@ -68,7 +68,7 @@ class BarPanel implements \Tracy\IBarPanel
 	 * Renders HTML code for custom tab.
 	 * @return string
 	 */
-    public function getTab()
+    public function getTab(): ?string
     {
         $html = '<img src="'.self::$icon.'" alt="mysqli queries logger" /> ';
         $queries = $this->getQueries();
@@ -89,7 +89,7 @@ class BarPanel implements \Tracy\IBarPanel
 	 * Renders HTML code for custom panel.
 	 * @return string
 	 */
-    public function getPanel()
+    public function getPanel(): ?string
     {
         if (class_exists('\SqlFormatter')) {
             \SqlFormatter::$pre_attributes = 'style="color: black;"';

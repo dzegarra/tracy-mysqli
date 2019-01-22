@@ -9,7 +9,7 @@
         "psr-4": {"Dzegarra\\TracyMysqli\\": "src/"}
     },
     "require": {
-        "tracy/tracy": "^2.4"
+        "tracy/tracy": "3.0.x-dev"
     },
     "suggest": {
         "jdorn/sql-formatter": "Highlight the SQL logged queries"
